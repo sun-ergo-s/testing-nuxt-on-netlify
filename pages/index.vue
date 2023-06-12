@@ -1,5 +1,11 @@
 <script setup>
 
+definePageMeta({
+    auth: {
+        navigateAuthenticatedTo: '/',
+    }
+})
+
 const { status, signIn } = useAuth()
 
 </script>
