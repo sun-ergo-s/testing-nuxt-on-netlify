@@ -12,6 +12,6 @@ export default defineNuxtConfig({
     '@sidebase/nuxt-auth'
   ],
   auth: {
-    origin: "https://whimsical-biscotti-346a06.netlify.app"
+    origin: process.env.AUTH_ORIGIN
   }
 })
