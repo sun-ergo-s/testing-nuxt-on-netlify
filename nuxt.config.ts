@@ -10,5 +10,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@sidebase/nuxt-auth'
-  ]
+  ],
+  auth: {
+    origin: "https://whimsical-biscotti-346a06.netlify.app"
+  }
 })
