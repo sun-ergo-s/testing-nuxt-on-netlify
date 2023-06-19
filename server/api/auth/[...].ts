@@ -8,14 +8,7 @@ export default NuxtAuthHandler({
     providers: [
         GoogleProvider.default({
             clientId: config.public.googleClientId,
-            clientSecret: config.public.googleSecret,
-            authorization: {
-                params: {
-                    prompt: "consent",
-                    access_type: "offline",
-                    response_type: "code"
-                }
-            }
+            clientSecret: config.public.googleSecret
         })
     ],
     cookies: {
