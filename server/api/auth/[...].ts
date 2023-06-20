@@ -21,5 +21,15 @@ export default NuxtAuthHandler({
           secure: true,
         },
       },
+      state: {
+        name: `__Host-next-auth.state`,
+        options: {
+          httpOnly: true,
+          sameSite: "lax",
+          path: "/",
+          secure: true,
+          maxAge: 900
+        },
+      },
     }
 })
