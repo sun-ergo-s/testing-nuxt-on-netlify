@@ -10,5 +10,16 @@ export default NuxtAuthHandler({
             clientId: config.public.googleClientId,
             clientSecret: config.public.googleSecret
         })
-    ]
+    ],
+    cookies: {
+        pkceCodeVerifier: {
+            name: "next-auth.pkce.code_verifier",
+                options: {
+                httpOnly: true,
+                sameSite: "none",
+                path: "/",
+                secure: true,
+            },
+        },
+    }
 })
